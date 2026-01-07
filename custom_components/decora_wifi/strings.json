@@ -1,0 +1,61 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to myLeviton",
+        "description": "Enter your myLeviton account credentials.",
+        "data": {
+          "username": "Email",
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid username or password",
+      "cannot_connect": "Failed to connect to myLeviton service"
+    },
+    "abort": {
+      "already_configured": "This account is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Device Type Configuration",
+        "description": "Override how each device is treated. Auto uses model detection. Found {devices} devices.",
+        "data": {}
+      }
+    },
+    "abort": {
+      "cannot_connect": "Failed to connect to fetch devices",
+      "no_devices": "No devices found"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "wifi_signal": {
+        "name": "WiFi signal"
+      },
+      "ip_address": {
+        "name": "IP address"
+      },
+      "last_updated": {
+        "name": "Last updated"
+      }
+    },
+    "number": {
+      "preset_level": {
+        "name": "Preset level"
+      },
+      "led_brightness": {
+        "name": "LED brightness"
+      },
+      "fade_on_time": {
+        "name": "Fade on time"
+      },
+      "fade_off_time": {
+        "name": "Fade off time"
+      }
+    }
+  }
+}
