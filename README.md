@@ -45,17 +45,22 @@ This integration fixes that by:
 4. Search for "Decora WiFi"
 5. Enter your myLeviton credentials
 
-### HACS Installation (Coming Soon)
+### HACS Installation
 
-Add this repository as a custom repository in HACS.
+1. Open HACS in Home Assistant
+2. Click the three dots menu → Custom repositories
+3. Add `https://github.com/joerican/ha-decora-wifi-fan` with category "Integration"
+4. Search for "Decora WiFi" and install
+5. Restart Home Assistant
 
 ## Configuration
 
 ### Device Type Override
 
-If your fan isn't auto-detected:
-1. In myLeviton app, set the device's "Custom Type" to "ceiling-fan"
-2. Or use the integration's options flow to override device type
+If your fan isn't auto-detected (known fan models: DW4SF, D24SF):
+1. Go to Settings → Devices & Services → Decora WiFi
+2. Click the gear icon on your config entry
+3. Change any device from "Auto" to "Fan" or "Light"
 
 ### Fan Speed Mapping
 
